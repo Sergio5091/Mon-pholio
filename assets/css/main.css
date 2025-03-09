@@ -40,16 +40,18 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f4fafd;/* font competence */
+  
+    background: linear-gradient(to bottom, #ffffff, #f4c8b1);
+
   --surface-color: #ffffff;
 }
 
 .dark-background {
   --background-color: #040b14;
   --default-color: #ffffff;/* icone reseau */
-  --heading-color: #d1c5c5;/* nom */
-  --surface-color: #750505;
-  --contrast-color: #e11111;
+  --heading-color: #d1c5ce;/* nom */
+  --surface-color: #f1e2e2;
+  --contrast-color: #d7d1d1;
 }
 
 /* Smooth scroll */
@@ -91,7 +93,7 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #df1529;
+  background: #f7f0f1;
   color: #ffffff;
   text-align: left;
   padding: 15px;
@@ -191,7 +193,7 @@ h6 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  background-color: rgb(16, 25, 56);
   color: var(--default-color);
   margin: 0 2px;
   border-radius: 50%;
@@ -226,7 +228,7 @@ h6 {
 
 .header .header-toggle {
   color: var(--contrast-color);
-  background-color: var(--accent-color);
+  background-color: #292b29;
   font-size: 22px;
   display: flex;
   align-items: center;
@@ -244,7 +246,7 @@ h6 {
 
 .header .header-toggle:hover {
   color: var(--contrast-color);
-  background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  background-color: color-mix(in srgb, var(--accent-color) 90%, rgb(179, 19, 19) 15%);
 }
 
 /*--------------------------------------------------------------
@@ -786,6 +788,7 @@ section,
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .portfolio .portfolio-filters li {
@@ -909,6 +912,7 @@ section,
   transition: 0.5s;
   border: 1px solid var(--accent-color);
   margin-right: 20px;
+  background-color: #ffb65b;
 }
 
 .services .service-item .icon i {
